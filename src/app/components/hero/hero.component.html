@@ -1,0 +1,74 @@
+<section class="hero">
+  <div class="hero-grid">
+    <div class="copy">
+      <div class="kicker">Orquídeas, romance y propósito</div>
+      <h1 class="h1">Una historia en tonos suaves y fuerza tranquila</h1>
+      <p class="lead">
+        Esta página celebra a una mujer que transforma retos en logros: con valentía, belleza serena y una ambición honesta.
+        Entre orquídeas y luz tenue, su narrativa se convierte en diseño.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">Valiente</span>
+        <span class="pill">Hermosa</span>
+        <span class="pill">Exitosa</span>
+      </div>
+
+      <ul class="bullets">
+        <li *ngFor="let l of lines">{{ l }}</li>
+      </ul>
+
+      <div class="cta-row">
+        <a class="btn" href="#logros">Ver logros</a>
+        <a class="btn btn-ghost" href="#navidad">Escena navideña</a>
+      </div>
+    </div>
+
+    <div class="visual" aria-hidden="true">
+      <div class="frame">
+        <div class="orchid">
+          <svg viewBox="0 0 520 520" role="img" aria-label="Orquídea estilizada">
+            <defs>
+              <radialGradient id="p" cx="35%" cy="30%" r="70%">
+                <stop offset="0" stop-color="var(--pink)" stop-opacity="1"/>
+                <stop offset="1" stop-color="var(--pink-soft)" stop-opacity="1"/>
+              </radialGradient>
+              <radialGradient id="b" cx="55%" cy="40%" r="75%">
+                <stop offset="0" stop-color="var(--blue-soft)" stop-opacity="1"/>
+                <stop offset="1" stop-color="var(--blue-deep)" stop-opacity="1"/>
+              </radialGradient>
+            </defs>
+
+            <!-- petals -->
+            <path d="M260 80c72 0 120 54 120 116S332 330 260 330 140 256 140 196 188 80 260 80z" fill="url(#p)" opacity=".95"/>
+            <path d="M132 240c0-58 48-102 110-102 38 0 70 16 92 44-30 26-50 64-50 106 0 16 3 32 8 46-18 18-42 28-70 28-54 0-90-46-90-122z" fill="url(#b)" opacity=".92"/>
+            <path d="M388 240c0-58-48-102-110-102-38 0-70 16-92 44 30 26 50 64 50 106 0 16-3 32-8 46 18 18 42 28 70 28 54 0 90-46 90-122z" fill="url(#b)" opacity=".92"/>
+
+            <!-- center -->
+            <path d="M260 210c36 0 66 28 66 62s-30 64-66 64-66-30-66-64 30-62 66-62z" fill="var(--cream)" opacity=".95"/>
+            <path d="M260 235c18 0 34 14 34 31s-16 33-34 33-34-16-34-33 16-31 34-31z" fill="var(--pink)"/>
+
+            <!-- sparkle dots -->
+            <g fill="var(--white)" opacity=".8">
+              <circle cx="95" cy="140" r="4"/>
+              <circle cx="420" cy="155" r="5"/>
+              <circle cx="110" cy="380" r="3"/>
+              <circle cx="410" cy="390" r="4"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="caption">
+          <div class="cap-title">Orquídeas</div>
+          <div class="cap-body">Elegancia, resiliencia y un romance moderno.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider">
+    <div class="line"></div>
+    <div class="tag">Amor • Orquídeas • Invierno</div>
+    <div class="line"></div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<section class="charts">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Charts informativos</div>
+      <h2 class="h2">Datos que cuentan la historia</h2>
+      <p class="p">
+        No es “romance” sin propósito: estos gráficos resumen fortaleza, hitos y enfoque.
+        (Valores de ejemplo — puedes ajustar en <code>charts.component.ts</code>.)
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">Fortaleza integral</div>
+        <canvas #radarCanvas height="260"></canvas>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Hitos del año</div>
+        <canvas #barCanvas height="260"></canvas>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Distribución del enfoque</div>
+        <canvas #donutCanvas height="260"></canvas>
+        <div class="note">
+          Balance realista: amor, trabajo, aprendizaje… y descanso.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

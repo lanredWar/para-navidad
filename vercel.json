@@ -1,0 +1,6 @@
+{
+  "framework": "angular",
+  "buildCommand": "npm run build:prod",
+  "outputDirectory": "dist/amor-en-rosa/browser",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

@@ -1,0 +1,63 @@
+<section class="xmas">
+  <div class="wrap">
+    <div class="card">
+      <div class="head">
+        <div class="kicker">Eventos navideños (CSS + JavaScript)</div>
+        <h2 class="h2">Invierno, luces y un árbol que cobra vida</h2>
+        <p class="p">
+          La nieve cae con <strong>CSS</strong>, las luces titilan con <strong>CSS</strong>, y el árbol se construye y anima
+          con <strong>JavaScript puro</strong> (sin imágenes).
+        </p>
+      </div>
+
+      <div class="scene">
+        <div class="snow" aria-hidden="true">
+          <span class="flake" *ngFor="let _ of [].constructor(36)"></span>
+        </div>
+
+        <div class="twinkle" aria-hidden="true"></div>
+
+        <div class="stage">
+          <div class="stage-left">
+            <div class="wish">
+              <div class="wish-title">Un deseo</div>
+              <div class="wish-text">
+                Que el amor sea decisión diaria: firme, tierno y estratégico.
+              </div>
+              <div class="ribbon" aria-hidden="true"></div>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="label">Brillo</div>
+                <div class="bar"><span style="width:88%"></span></div>
+              </div>
+              <div class="stat">
+                <div class="label">Calidez</div>
+                <div class="bar"><span style="width:76%"></span></div>
+              </div>
+              <div class="stat">
+                <div class="label">Paz</div>
+                <div class="bar"><span style="width:82%"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage-right">
+            <div class="tree-frame">
+              <div class="tree-title">Árbol de Navidad</div>
+              <div class="tree-host" #treeHost></div>
+              <div class="tree-note">Hecho con JS: ramas, esferas y luces con movimiento.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="tip">
+          Tip: si quieres más/menos esferas o luces, edita <code>src/assets/js/christmas-tree.js</code>.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

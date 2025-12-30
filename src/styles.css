@@ -1,0 +1,80 @@
+:root{
+  /* Palette (derived from the provided image) */
+  --blue-deep:#5f6e7f;
+  --blue-soft:#89a3c1;
+  --pink:#f6b7bc;
+  --pink-soft:#f8e4e5;
+  --white:#ffffff;
+  --cream:#f6f1ee;
+  --ink:#1b2430;
+  --surface: rgba(255,255,255,0.72);
+  --glass: rgba(255,255,255,0.56);
+  --stroke: rgba(95,110,127,0.18);
+  --shadow: 0 18px 50px rgba(27,36,48,0.18);
+  --r-lg: 22px;
+  --r-md: 16px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--ink);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing:0.1px;
+}
+
+a{color:inherit; text-decoration:none}
+
+a:hover{opacity:0.92}
+
+.container{
+  width:min(1120px, calc(100% - 40px));
+  margin:0 auto;
+}
+
+.h2{
+  font-family: "Playfair Display", serif;
+  font-weight:700;
+  letter-spacing:0.2px;
+  margin:0 0 10px;
+}
+
+.card{
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 12px;
+  border-radius: 999px;
+  background: rgba(246,183,188,0.22);
+  border: 1px solid rgba(246,183,188,0.35);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge .spark{
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  background: var(--pink);
+  box-shadow: 0 0 0 6px rgba(246,183,188,0.18);
+}
+
+button{
+  font: inherit;
+}
+
+/* Accessible focus */
+:focus-visible{
+  outline: 3px solid rgba(137,163,193,0.65);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
